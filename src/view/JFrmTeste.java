@@ -47,6 +47,11 @@ public class JFrmTeste extends javax.swing.JFrame {
         jLblTipo.setText("Tipo");
 
         jCboTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jCboTipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCboTipoActionPerformed(evt);
+            }
+        });
 
         jBtnDesabilitar.setText("Desabilitar");
         jBtnDesabilitar.addActionListener(new java.awt.event.ActionListener() {
@@ -154,6 +159,10 @@ public class JFrmTeste extends javax.swing.JFrame {
         jBtnVisivel.setEnabled(false);
         jBtnInvisivel.setEnabled(true);
     }//GEN-LAST:event_jBtnVisivelActionPerformed
+
+    private void jCboTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCboTipoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCboTipoActionPerformed
 
     /**
      * @param args the command line arguments
