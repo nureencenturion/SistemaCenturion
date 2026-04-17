@@ -35,9 +35,13 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Clientes"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMnuClientesActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMnuVendedores">
               <Properties>
+                <Property name="mnemonic" type="int" value="118"/>
                 <Property name="text" type="java.lang.String" value="Vendedores"/>
               </Properties>
               <Events>
@@ -46,6 +50,7 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMnuFornecedores">
               <Properties>
+                <Property name="mnemonic" type="int" value="102"/>
                 <Property name="text" type="java.lang.String" value="Fornecedores"/>
               </Properties>
             </MenuItem>

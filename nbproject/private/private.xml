@@ -5,8 +5,10 @@
         <group>
             <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JDlgNrcClientes.java</file>
             <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JDlgNrcProdutos.java</file>
-            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JFrmTeste.java</file>
-            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JFrmPrincipal.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JFrmNrcPrincipal.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JDlgNrcVendedores.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JDlgNrcFornecedores.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JDlgNrcUsuarios.java</file>
         </group>
     </open-files>
 </project-private>

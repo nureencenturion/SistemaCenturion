@@ -62,8 +62,14 @@ public class JFrmNrcPrincipal extends javax.swing.JFrame {
         jMnuClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cliente.png"))); // NOI18N
         jMnuClientes.setText("Clientes");
+        jMnuClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuClientesActionPerformed(evt);
+            }
+        });
         jMnuCadastros.add(jMnuClientes);
 
+        jMnuVendedores.setMnemonic('v');
         jMnuVendedores.setText("Vendedores");
         jMnuVendedores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,6 +78,7 @@ public class JFrmNrcPrincipal extends javax.swing.JFrame {
         });
         jMnuCadastros.add(jMnuVendedores);
 
+        jMnuFornecedores.setMnemonic('f');
         jMnuFornecedores.setText("Fornecedores");
         jMnuCadastros.add(jMnuFornecedores);
 
@@ -154,6 +161,10 @@ public class JFrmNrcPrincipal extends javax.swing.JFrame {
     private void jMnuVendedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuVendedoresActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMnuVendedoresActionPerformed
+
+    private void jMnuClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuClientesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMnuClientesActionPerformed
 
     /**
      * @param args the command line arguments
