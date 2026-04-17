@@ -69,6 +69,7 @@ public class JFrmNrcPrincipal extends javax.swing.JFrame {
         });
         jMnuCadastros.add(jMnuClientes);
 
+        jMnuVendedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/vendedorcerto.png"))); // NOI18N
         jMnuVendedores.setMnemonic('v');
         jMnuVendedores.setText("Vendedores");
         jMnuVendedores.addActionListener(new java.awt.event.ActionListener() {
@@ -78,6 +79,7 @@ public class JFrmNrcPrincipal extends javax.swing.JFrame {
         });
         jMnuCadastros.add(jMnuVendedores);
 
+        jMnuFornecedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fornecedoor.png"))); // NOI18N
         jMnuFornecedores.setMnemonic('f');
         jMnuFornecedores.setText("Fornecedores");
         jMnuCadastros.add(jMnuFornecedores);
@@ -164,6 +166,9 @@ public class JFrmNrcPrincipal extends javax.swing.JFrame {
 
     private void jMnuClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuClientesActionPerformed
         // TODO add your handling code here:
+        JDlgNrcClientes jDlgNrcClientes = new JDlgNrcClientes(null, true);
+        jDlgNrcClientes.setVisible(true);
+        setLocationRelativeTo(null);
     }//GEN-LAST:event_jMnuClientesActionPerformed
 
     /**

@@ -17,14 +17,61 @@ public class JDlgNrcClientes extends javax.swing.JDialog {
     public JDlgNrcClientes(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setTitle("Cadastro de cliente");
+        setLocationRelativeTo(null);
+        desabilitar();
     }
 
         public void desabilitar(){
-    
+            jTxtCodigo.setEnabled(false);
+        jTxtNome.setEnabled(false);
+        jTxtSobrenome.setEnabled(false);
+        jFmtRg.setEnabled(false);
+        jFmtCpf.setEnabled(false);
+        jFmtDataNascimento.setEnabled(false);
+        jFmtDataNascimento.setEnabled(false);
+        jTxtIdade.setEnabled(false);
+        jCboSexo.setEnabled(false);
+        jFmtCep.setEnabled(false);
+        jFmtTelefone.setEnabled(false);
+        jTxtEmail.setEnabled(false);
+        jTxtCidade.setEnabled(false);
+        jTxtEstado.setEnabled(false);
+        jTxtRua.setEnabled(false);
+        jTxtBairro.setEnabled(false);
+        jTxtNumero.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnIncluir.setEnabled(true);
+        jBtnAlterar.setEnabled(true);
+        jBtnExcluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);
     }
     
     public void habilitar(){
-        
+         jTxtCodigo.setEnabled(true);
+        jTxtNome.setEnabled(true);
+        jTxtSobrenome.setEnabled(true);
+        jFmtRg.setEnabled(true);
+        jFmtCpf.setEnabled(true);
+        jFmtDataNascimento.setEnabled(true);
+        jFmtDataNascimento.setEnabled(true);
+        jTxtIdade.setEnabled(true);
+        jCboSexo.setEnabled(true);
+        jFmtCep.setEnabled(true);
+        jFmtTelefone.setEnabled(true);
+        jTxtEmail.setEnabled(true);
+        jTxtCidade.setEnabled(true);
+        jTxtEstado.setEnabled(true);
+        jTxtRua.setEnabled(true);
+        jTxtBairro.setEnabled(true);
+        jTxtNumero.setEnabled(true);
+        jBtnConfirmar.setEnabled(true);
+        jBtnCancelar.setEnabled(true);
+        jBtnIncluir.setEnabled(false);
+        jBtnAlterar.setEnabled(false);
+        jBtnExcluir.setEnabled(false);
+        jBtnPesquisar.setEnabled(false);
     }
 
     /**
@@ -50,9 +97,9 @@ public class JDlgNrcClientes extends javax.swing.JDialog {
         jFmtRg = new javax.swing.JFormattedTextField();
         jFmtDataNascimento = new javax.swing.JFormattedTextField();
         jLabel6 = new javax.swing.JLabel();
-        jCboIdade = new javax.swing.JComboBox<>();
+        jCboSexo = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
-        jFmtNrcCep = new javax.swing.JFormattedTextField();
+        jFmtCep = new javax.swing.JFormattedTextField();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jTxtEmail = new javax.swing.JTextField();
@@ -106,7 +153,7 @@ public class JDlgNrcClientes extends javax.swing.JDialog {
 
         jLabel6.setText("Sexo");
 
-        jCboIdade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jCboSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel7.setText("CEP");
 
@@ -206,10 +253,10 @@ public class JDlgNrcClientes extends javax.swing.JDialog {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel6)
                                         .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(jCboIdade, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(jCboSexo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jFmtNrcCep, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jFmtCep, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel7)))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -320,9 +367,9 @@ public class JDlgNrcClientes extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jFmtDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFmtNrcCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFmtCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtIdade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCboIdade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jCboSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8)
@@ -455,11 +502,11 @@ public class JDlgNrcClientes extends javax.swing.JDialog {
     private javax.swing.JButton jBtnExcluir;
     private javax.swing.JButton jBtnIncluir;
     private javax.swing.JButton jBtnPesquisar;
-    private javax.swing.JComboBox<String> jCboIdade;
+    private javax.swing.JComboBox<String> jCboSexo;
     private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JFormattedTextField jFmtCep;
     private javax.swing.JFormattedTextField jFmtCpf;
     private javax.swing.JFormattedTextField jFmtDataNascimento;
-    private javax.swing.JFormattedTextField jFmtNrcCep;
     private javax.swing.JFormattedTextField jFmtRg;
     private javax.swing.JFormattedTextField jFmtTelefone;
     private javax.swing.JLabel jLabel1;

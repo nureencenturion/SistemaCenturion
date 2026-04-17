@@ -68,11 +68,11 @@
                                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
-                                  <Component id="jCboIdade" max="32767" attributes="0"/>
+                                  <Component id="jCboSexo" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jFmtNrcCep" min="-2" pref="193" max="-2" attributes="0"/>
+                                  <Component id="jFmtCep" min="-2" pref="193" max="-2" attributes="0"/>
                                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -222,9 +222,9 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jFmtDataNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jFmtNrcCep" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtCep" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTxtIdade" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jCboIdade" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCboSexo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -321,7 +321,7 @@
         <Property name="text" type="java.lang.String" value="Sexo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jCboIdade">
+    <Component class="javax.swing.JComboBox" name="jCboSexo">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
@@ -341,7 +341,7 @@
         <Property name="text" type="java.lang.String" value="CEP"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFmtNrcCep">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtCep">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
