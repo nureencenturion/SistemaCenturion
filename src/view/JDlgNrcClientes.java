@@ -4,6 +4,7 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
 /**
  *
  * @author u71744222177
@@ -16,6 +17,14 @@ public class JDlgNrcClientes extends javax.swing.JDialog {
     public JDlgNrcClientes(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+    }
+
+        public void desabilitar(){
+    
+    }
+    
+    public void habilitar(){
+        
     }
 
     /**
@@ -371,7 +380,7 @@ public class JDlgNrcClientes extends javax.swing.JDialog {
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showConfirmDialog(null, "Confirma exclusão do usuário ?",
+        JOptionPane.showConfirmDialog(null, "Confirma exclusão do cliente ?",
             "Seleciona a opção", JOptionPane.YES_NO_OPTION );
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
