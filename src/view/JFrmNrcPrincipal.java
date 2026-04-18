@@ -15,7 +15,7 @@ public class JFrmNrcPrincipal extends javax.swing.JFrame {
      */
     public JFrmNrcPrincipal() {
         initComponents();
-        setTitle("Sistema do IFMS");
+        setTitle("Sistema de mercadinho da Nureen");
         setExtendedState(MAXIMIZED_BOTH);
     }
 
@@ -69,6 +69,7 @@ public class JFrmNrcPrincipal extends javax.swing.JFrame {
         });
         jMnuCadastros.add(jMnuClientes);
 
+        jMnuVendedores.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuVendedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/vendedorcerto.png"))); // NOI18N
         jMnuVendedores.setMnemonic('v');
         jMnuVendedores.setText("Vendedores");
@@ -79,14 +80,26 @@ public class JFrmNrcPrincipal extends javax.swing.JFrame {
         });
         jMnuCadastros.add(jMnuVendedores);
 
-        jMnuFornecedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fornecedoor.png"))); // NOI18N
+        jMnuFornecedores.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuFornecedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fornecedornv.png"))); // NOI18N
         jMnuFornecedores.setMnemonic('f');
         jMnuFornecedores.setText("Fornecedores");
+        jMnuFornecedores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuFornecedoresActionPerformed(evt);
+            }
+        });
         jMnuCadastros.add(jMnuFornecedores);
 
+        jMnuProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
         jMnuProdutos.setMnemonic('p');
         jMnuProdutos.setText("Produtos");
+        jMnuProdutos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuProdutosActionPerformed(evt);
+            }
+        });
         jMnuCadastros.add(jMnuProdutos);
         jMnuCadastros.add(jSeparator1);
 
@@ -106,7 +119,8 @@ public class JFrmNrcPrincipal extends javax.swing.JFrame {
         jMnuMovimentos.setMnemonic('m');
         jMnuMovimentos.setText("Movimentos");
 
-        jMnuVendas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuVendas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_DOWN_MASK));
+        jMnuVendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/vendas.png"))); // NOI18N
         jMnuVendas.setText("Vendas");
         jMnuVendas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,14 +129,29 @@ public class JFrmNrcPrincipal extends javax.swing.JFrame {
         });
         jMnuMovimentos.add(jMnuVendas);
 
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.ALT_DOWN_MASK));
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/vendaproduto1.png"))); // NOI18N
         jMenuItem1.setText("Venda_produto");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         jMnuMovimentos.add(jMenuItem1);
 
-        jMnuCompras.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuCompras.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_DOWN_MASK));
+        jMnuCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/compras.png"))); // NOI18N
         jMnuCompras.setText("Compras");
         jMnuMovimentos.add(jMnuCompras);
 
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.ALT_DOWN_MASK));
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/compraproduto.png"))); // NOI18N
         jMenuItem2.setText("Compra_produto");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMnuMovimentos.add(jMenuItem2);
 
         jMenuBar1.add(jMnuMovimentos);
@@ -162,6 +191,9 @@ public class JFrmNrcPrincipal extends javax.swing.JFrame {
 
     private void jMnuVendedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuVendedoresActionPerformed
         // TODO add your handling code here:
+        JDlgNrcVendedores jDlgNrcVendedores = new JDlgNrcVendedores(null, true);
+        jDlgNrcVendedores.setVisible(true);
+        setLocationRelativeTo(null);
     }//GEN-LAST:event_jMnuVendedoresActionPerformed
 
     private void jMnuClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuClientesActionPerformed
@@ -170,6 +202,28 @@ public class JFrmNrcPrincipal extends javax.swing.JFrame {
         jDlgNrcClientes.setVisible(true);
         setLocationRelativeTo(null);
     }//GEN-LAST:event_jMnuClientesActionPerformed
+
+    private void jMnuFornecedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuFornecedoresActionPerformed
+        // TODO add your handling code here:
+        JDlgNrcFornecedores jDlgNrcFornecedores = new JDlgNrcFornecedores(null, true);
+        jDlgNrcFornecedores.setVisible(true);
+        setLocationRelativeTo(null);
+    }//GEN-LAST:event_jMnuFornecedoresActionPerformed
+
+    private void jMnuProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuProdutosActionPerformed
+        // TODO add your handling code here:
+        JDlgNrcProdutos jDlgNrcProdutos = new JDlgNrcProdutos(null, true);
+        jDlgNrcProdutos.setVisible(true);
+        setLocationRelativeTo(null);
+    }//GEN-LAST:event_jMnuProdutosActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments

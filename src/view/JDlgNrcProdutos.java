@@ -17,14 +17,41 @@ public class JDlgNrcProdutos extends javax.swing.JDialog {
     public JDlgNrcProdutos(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setTitle("Cadastro de Produtos");
+        setLocationRelativeTo(null);
+        desabilitar();
     }
     
     public void habilitar(){
-        
+        jTxtCodigo.setEnabled(false);
+        jTxtNome.setEnabled(false);
+        jCboCategoria.setEnabled(false);
+        jTxtPreco.setEnabled(false);
+        jTxtQuantidade.setEnabled(false);
+        jTxtCodigodeBarras.setEnabled(false);
+        jTxtDescricao.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnIncluir.setEnabled(true);
+        jBtnAlterar.setEnabled(true);
+        jBtnExcluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);
     }
     
     public void desabilitar(){
-        
+        jTxtCodigo.setEnabled(true);
+        jTxtNome.setEnabled(true);
+        jCboCategoria.setEnabled(true);
+        jTxtPreco.setEnabled(true);
+        jTxtQuantidade.setEnabled(true);
+        jTxtCodigodeBarras.setEnabled(true);
+        jTxtDescricao.setEnabled(true);
+        jBtnConfirmar.setEnabled(true);
+        jBtnCancelar.setEnabled(true);
+        jBtnIncluir.setEnabled(false);
+        jBtnAlterar.setEnabled(false);
+        jBtnExcluir.setEnabled(false);
+        jBtnPesquisar.setEnabled(false);
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -244,7 +271,7 @@ public class JDlgNrcProdutos extends javax.swing.JDialog {
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showConfirmDialog(null, "Confirma exclusão do usuário ?",
+        JOptionPane.showConfirmDialog(null, "Confirma exclusão do produto ?",
             "Seleciona a opção", JOptionPane.YES_NO_OPTION );
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
@@ -254,7 +281,7 @@ public class JDlgNrcProdutos extends javax.swing.JDialog {
 
     private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showInputDialog(null, "Entre com o código do usuário");
+        JOptionPane.showInputDialog(null, "Entre com o código do produto");
     }//GEN-LAST:event_jBtnPesquisarActionPerformed
 
     private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed

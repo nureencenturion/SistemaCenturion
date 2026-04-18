@@ -17,14 +17,42 @@ public class JDlgNrcVendedores extends javax.swing.JDialog {
     public JDlgNrcVendedores(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setTitle("Cadastro de Vendedores");
+        setLocationRelativeTo(null);
+        desabilitar();
+        
     }
     
     public void desabilitar(){
-    
+    jTxtCodigo.setEnabled(false);
+        jTxtNome.setEnabled(false);
+        jFmtCpf.setEnabled(false);
+        jFmtRg.setEnabled(false);
+        jFmtTelefone.setEnabled(false);
+        jTxtEmail.setEnabled(false);
+        jTxtIdade.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnIncluir.setEnabled(true);
+        jBtnAlterar.setEnabled(true);
+        jBtnExcluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);
     }
     
     public void habilitar(){
-        
+        jTxtCodigo.setEnabled(true);
+        jTxtNome.setEnabled(true);
+        jFmtCpf.setEnabled(true);
+        jFmtRg.setEnabled(true);
+        jFmtTelefone.setEnabled(true);
+        jTxtEmail.setEnabled(true);
+        jTxtIdade.setEnabled(true);
+        jBtnConfirmar.setEnabled(true);
+        jBtnCancelar.setEnabled(true);
+        jBtnIncluir.setEnabled(false);
+        jBtnAlterar.setEnabled(false);
+        jBtnExcluir.setEnabled(false);
+        jBtnPesquisar.setEnabled(false);
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -227,12 +255,12 @@ public class JDlgNrcVendedores extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
-        habilitar();        // TODO add your handling code here:
+        desabilitar();        // TODO add your handling code here:
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showConfirmDialog(null, "Confirma exclusão do usuário ?",
+        JOptionPane.showConfirmDialog(null, "Confirma exclusão do vendedor ?",
             "Seleciona a opção", JOptionPane.YES_NO_OPTION );
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
@@ -242,7 +270,7 @@ public class JDlgNrcVendedores extends javax.swing.JDialog {
 
     private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showInputDialog(null, "Entre com o código do usuário");
+        JOptionPane.showInputDialog(null, "Entre com o código do vendedor");
     }//GEN-LAST:event_jBtnPesquisarActionPerformed
 
     private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed

@@ -18,13 +18,58 @@ public class JDlgNrcFornecedores extends javax.swing.JDialog {
     public JDlgNrcFornecedores(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setTitle("Cadastro de Fornecedores");
+        setLocationRelativeTo(null);
+        desabilitar();
     }
 
     public void desabilitar() {
-        
+        jTxtCodigo.setEnabled(false);
+        jTxtNome.setEnabled(false);
+        jFmtCnpj.setEnabled(false);
+        jCboCategoria.setEnabled(false);
+        jTxtEmail.setEnabled(false);
+        jTxtLogradouro.setEnabled(false);
+        jTxtBairro.setEnabled(false);
+        jTxtNumero.setEnabled(false);
+        jTxtCidade.setEnabled(false);
+        jTxtEstado.setEnabled(false);
+        jTxtSite.setEnabled(false);
+        jFmtTelefone.setEnabled(false);
+        jFmtHorario.setEnabled(false);
+        jTxtSite.setEnabled(false);
+        jTxtDiasEntrega.setEnabled(false);
+        jCboStatus.setEnabled(false);
+        jBtnConfirmar.setEnabled(false);
+        jBtnCancelar.setEnabled(false);
+        jBtnIncluir.setEnabled(true);
+        jBtnAlterar.setEnabled(true);
+        jBtnExcluir.setEnabled(true);
+        jBtnPesquisar.setEnabled(true);
     }
     public void habilitar() {
-        
+        jTxtCodigo.setEnabled(true);
+        jTxtNome.setEnabled(true);
+        jFmtCnpj.setEnabled(true);
+        jCboCategoria.setEnabled(true);
+        jTxtEmail.setEnabled(true);
+        jTxtLogradouro.setEnabled(true);
+        jTxtBairro.setEnabled(true);
+        jTxtNumero.setEnabled(true);
+        jTxtCidade.setEnabled(true);
+        jTxtEstado.setEnabled(true);
+        jTxtSite.setEnabled(true);
+        jFmtTelefone.setEnabled(true);
+        jFmtHorario.setEnabled(true);
+        jTxtSite.setEnabled(true);
+        jTxtDiasEntrega.setEnabled(true);
+        jCboStatus.setEnabled(true);
+        jBtnConfirmar.setEnabled(true);
+        jBtnCancelar.setEnabled(true);
+        jBtnIncluir.setEnabled(false);
+        jBtnAlterar.setEnabled(false);
+        jBtnExcluir.setEnabled(false);
+        jBtnPesquisar.setEnabled(false);
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -354,7 +399,7 @@ public class JDlgNrcFornecedores extends javax.swing.JDialog {
 
     private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showInputDialog(null, "Entre com o código do usuário");
+        JOptionPane.showInputDialog(null, "Entre com o código do cliente");
     }//GEN-LAST:event_jBtnPesquisarActionPerformed
 
     private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
@@ -373,7 +418,7 @@ public class JDlgNrcFornecedores extends javax.swing.JDialog {
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showConfirmDialog(null, "Confirma exclusão do usuário ?",
+        JOptionPane.showConfirmDialog(null, "Confirma exclusão do cliente ?",
             "Seleciona a opção", JOptionPane.YES_NO_OPTION );
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
