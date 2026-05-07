@@ -108,6 +108,11 @@ public class JDlgNrcUsuarios extends javax.swing.JDialog {
         jLblSenha.setText("Senha");
 
         jPwfSenha.setText("jPasswordField1");
+        jPwfSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPwfSenhaActionPerformed(evt);
+            }
+        });
 
         jChbAtivo.setText("Ativo");
 
@@ -294,6 +299,10 @@ public class JDlgNrcUsuarios extends javax.swing.JDialog {
         // TODO add your handling code here:
         JOptionPane.showInputDialog(null, "Entre com o código do usuário");
     }//GEN-LAST:event_jBtnPesquisarActionPerformed
+
+    private void jPwfSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPwfSenhaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPwfSenhaActionPerformed
 
     /**
      * @param args the command line arguments
