@@ -399,7 +399,7 @@ public class JDlgNrcFornecedores extends javax.swing.JDialog {
 
     private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showInputDialog(null, "Entre com o código do cliente");
+        JOptionPane.showInputDialog(null, "Entre com o código do fornecedor");
     }//GEN-LAST:event_jBtnPesquisarActionPerformed
 
     private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
@@ -418,7 +418,7 @@ public class JDlgNrcFornecedores extends javax.swing.JDialog {
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showConfirmDialog(null, "Confirma exclusão do cliente ?",
+        JOptionPane.showConfirmDialog(null, "Confirma exclusão do fornecedor ?",
             "Seleciona a opção", JOptionPane.YES_NO_OPTION );
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 

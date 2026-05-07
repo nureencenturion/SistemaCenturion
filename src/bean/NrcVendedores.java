@@ -11,127 +11,70 @@ import java.util.Date;
  * @author u71744222177
  */
 public class NrcVendedores {
-    private int NrcIdUsuarios;
+    private int NrcIdVendedores;
     private String nrcNome;
-    private String nrcApelido;
+    private int nrcIdade;
+    private String nrcTelefone;
     private String nrcCpf;
-    private Date nrcDataNascimento;
-    private int nrcNivel;
-    private String nrcSenha;
-    private String nrcAtivo;
+    private String nrcRg;
+    private String nrcEmail;
 
-    /**
-     * @return the NrcIdUsuarios
-     */
-    public int getNrcIdUsuarios() {
-        return NrcIdUsuarios;
+    public int getNrcIdVendedores() {
+        return NrcIdVendedores;
     }
 
-    /**
-     * @param NrcIdUsuarios the MpvIdUsuarios to set
-     */
-    public void setNrcIdUsuarios(int NrcIdUsuarios) {
-        this.NrcIdUsuarios = NrcIdUsuarios;
+    public void setNrcIdVendedores(int NrcIdVendedores) {
+        this.NrcIdVendedores = NrcIdVendedores;
     }
 
-    /**
-     * @return the mpvNome
-     */
     public String getNrcNome() {
         return nrcNome;
     }
 
-    /**
-     * @param nrcNome the mpvNome to set
-     */
     public void setNrcNome(String nrcNome) {
         this.nrcNome = nrcNome;
     }
 
-    /**
-     * @return the nrcApelido
-     */
-    public String getNrcApelido() {
-        return nrcApelido;
+    public int getNrcIdade() {
+        return nrcIdade;
     }
 
-    /**
-     * @param nrcApelido the mpvApelido to set
-     */
-    public void setNrcApelido(String nrcApelido) {
-        this.nrcApelido = nrcApelido;
+    public void setNrcIdade(int nrcIdade) {
+        this.nrcIdade = nrcIdade;
     }
 
-    /**
-     * @return the mpvCpf
-     */
+    public String getNrcTelefone() {
+        return nrcTelefone;
+    }
+
+    public void setNrcTelefone(String nrcTelefone) {
+        this.nrcTelefone = nrcTelefone;
+    }
+
     public String getNrcCpf() {
         return nrcCpf;
     }
 
-    /**
-     * @param nrcCpf the mpvCpf to set
-     */
     public void setNrcCpf(String nrcCpf) {
         this.nrcCpf = nrcCpf;
     }
 
-    /**
-     * @return the mpvDataNascimento
-     */
-    public Date getNrcDataNascimento() {
-        return nrcDataNascimento;
+    public String getNrcRg() {
+        return nrcRg;
     }
 
-    /**
-     * @param nrcDataNascimento the nrcDataNascimento to set
-     */
-    public void setNrcDataNascimento(Date nrcDataNascimento) {
-        this.nrcDataNascimento = nrcDataNascimento;
+    public void setNrcRg(String nrcRg) {
+        this.nrcRg = nrcRg;
     }
 
-    /**
-     * @return the nrcNivel
-     */
-    public int getNrcNivel() {
-        return nrcNivel;
+    public String getNrcEmail() {
+        return nrcEmail;
     }
 
-    /**
-     * @param nrcNivel the nrcNivel to set
-     */
-    public void setNrcNivel(int nrcNivel) {
-        this.nrcNivel = nrcNivel;
+    public void setNrcEmail(String nrcEmail) {
+        this.nrcEmail = nrcEmail;
     }
 
-    /**
-     * @return the nrcSenha
-     */
-    public String getNrcSenha() {
-        return nrcSenha;
-    }
-
-    /**
-     * @param nrcSenha the nrcSenha to set
-     */
-    public void setNrcSenha(String nrcSenha) {
-        this.nrcSenha = nrcSenha;
-    }
-
-    /**
-     * @return the nrcAtivo
-     */
-    public String getNrcAtivo() {
-        return nrcAtivo;
-    }
-
-    /**
-     * @param nrcAtivo the nrcAtivo to set
-     */
-    public void setNrcAtivo(String nrcAtivo) {
-        this.nrcAtivo = nrcAtivo;
-    }
-    
-    
+   
     
 }
