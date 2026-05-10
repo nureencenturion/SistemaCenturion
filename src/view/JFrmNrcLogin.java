@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author u71744222177
@@ -17,6 +19,7 @@ public class JFrmNrcLogin extends javax.swing.JFrame {
         initComponents();
         setTitle("Login de Usuário");
         setLocationRelativeTo(null);
+        
     }
 
     /**
@@ -120,6 +123,8 @@ public class JFrmNrcLogin extends javax.swing.JFrame {
             JFrmNrcPrincipal jFrmNrcPrincipal = new JFrmNrcPrincipal();
             jFrmNrcPrincipal.setVisible(true);
         
+        } else{
+            JOptionPane.showMessageDialog(null, "Usuário ou senha inválidos");
         };
         
     }//GEN-LAST:event_jBtnNrcConfirmarActionPerformed
