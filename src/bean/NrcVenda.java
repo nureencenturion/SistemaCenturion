@@ -17,7 +17,7 @@ public class NrcVenda {
     private int nrcIdClientes;
     private String nrcProduto;
     private Date nrcDataVenda;
-    private String nrcValorTotal;
+    private double nrcValorTotal;
 
     public int getNrcIdVenda() {
         return NrcIdVenda;
@@ -59,11 +59,11 @@ public class NrcVenda {
         this.nrcDataVenda = nrcDataVenda;
     }
 
-    public String getNrcValorTotal() {
+    public double getNrcValorTotal() {
         return nrcValorTotal;
     }
 
-    public void setNrcValorTotal(String nrcValorTotal) {
+    public void setNrcValorTotal(double nrcValorTotal) {
         this.nrcValorTotal = nrcValorTotal;
     }
 

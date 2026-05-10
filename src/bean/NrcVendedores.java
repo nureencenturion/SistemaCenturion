@@ -4,7 +4,6 @@
  */
 package bean;
 
-import java.util.Date;
 
 /**
  *

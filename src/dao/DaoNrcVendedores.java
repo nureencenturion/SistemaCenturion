@@ -13,7 +13,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import testes.JdbcNrcCrud;
 import bean.NrcVendedores;
-import java.sql.Date;
 
 /**
  *
@@ -35,7 +34,7 @@ public class DaoNrcVendedores extends DaoAbstract{
             cnt = DriverManager.getConnection(url, user, password); 
             
 
-            String sql = "insert into nrc_usuarios values(?,?,?,?,?,?,?)";
+            String sql = "insert into nrc_vendedores values(?,?,?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);    
             pst.setInt(1, nrcVendedores.getNrcIdVendedores());
             pst.setString(2, nrcVendedores.getNrcNome());
@@ -82,13 +81,11 @@ public class DaoNrcVendedores extends DaoAbstract{
             cnt = DriverManager.getConnection(url, user, password); 
             
 
-            String sql = "select * from nrc_usuarios ";
+            String sql = "select * from nrc_vendedores ";
             PreparedStatement pst = cnt.prepareStatement(sql);    
             ResultSet rs = pst.executeQuery();
             while (rs.next()== true){
-                System.out.println("id:" + rs.getInt("nrc_idVendedores"));
-                System.out.println("nome:" + rs.getString("nrc_nome"));
-                System.out.println("idade:" + rs.getString("nrc_idade"));
+                System.out.println("id:" + rs.getInt("nrc_id_vendedores"));
                 System.out.println("nome:" + rs.getString("nrc_nome"));
                 
             }

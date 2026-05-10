@@ -35,7 +35,7 @@ public class DaoNrcFornecedores extends DaoAbstract{
             cnt = DriverManager.getConnection(url, user, password); 
             
 
-            String sql = "insert into nrc_usuarios values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            String sql = "insert into nrc_fornecedores values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);    
             pst.setInt(1, nrcFornecedores.getNrcIdFornecedores());
             pst.setString(2, nrcFornecedores.getNrcNome());
@@ -91,11 +91,11 @@ public class DaoNrcFornecedores extends DaoAbstract{
             cnt = DriverManager.getConnection(url, user, password); 
             
 
-            String sql = "select * from nrc_usuarios ";
+            String sql = "select * from nrc_fornecedores ";
             PreparedStatement pst = cnt.prepareStatement(sql);    
             ResultSet rs = pst.executeQuery();
             while (rs.next()== true){
-                System.out.println("id:" + rs.getInt("nrc_idusuarios"));
+                System.out.println("id:" + rs.getInt("nrc_id_fornecedores"));
                 System.out.println("nome:" + rs.getString("nrc_nome"));
                 
             }

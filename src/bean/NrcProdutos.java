@@ -4,7 +4,6 @@
  */
 package bean;
 
-import java.util.Date;
 
 /**
  *
@@ -14,7 +13,7 @@ public class NrcProdutos {
     private int NrcIdProdutos;
     private String nrcNome;
     private String nrcCategoria;
-    private String nrcPreco;
+    private double nrcPreco;
     private int nrcQuantidade;
     private String nrcCodigodeBarras;
 
@@ -42,11 +41,11 @@ public class NrcProdutos {
         this.nrcCategoria = nrcCategoria;
     }
 
-    public String getNrcPreco() {
+    public double getNrcPreco() {
         return nrcPreco;
     }
 
-    public void setNrcPreco(String nrcPreco) {
+    public void setNrcPreco(double nrcPreco) {
         this.nrcPreco = nrcPreco;
     }
 

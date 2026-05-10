@@ -95,7 +95,7 @@ public class DaoNrcClientes extends DaoAbstract{
             PreparedStatement pst = cnt.prepareStatement(sql);    
             ResultSet rs = pst.executeQuery();
             while (rs.next()== true){
-                System.out.println("id:" + rs.getInt("nrc_idusuarios"));
+                System.out.println("id:" + rs.getInt("nrc_id_clientes"));
                 System.out.println("nome:" + rs.getString("nrc_nome"));
                 
             }

@@ -15,7 +15,7 @@ public class NrcCompra_produto {
     private int nrcProduto;
     private int nrcCompra;
     private int nrcQuantidade;
-    private String nrcPreco;
+    private double nrcPreco;
 
     public int getNrcIdCompraProduto() {
         return NrcIdCompraProduto;
@@ -49,11 +49,11 @@ public class NrcCompra_produto {
         this.nrcQuantidade = nrcQuantidade;
     }
 
-    public String getNrcPreco() {
+    public double getNrcPreco() {
         return nrcPreco;
     }
 
-    public void setNrcPreco(String nrcPreco) {
+    public void setNrcPreco(double nrcPreco) {
         this.nrcPreco = nrcPreco;
     }
     

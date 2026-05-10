@@ -13,7 +13,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import testes.JdbcNrcCrud;
 import bean.NrcVenda_produto;
-import java.sql.Date;
 
 /**
  *
@@ -35,13 +34,13 @@ public class DaoNrcVenda_produto extends DaoAbstract{
             cnt = DriverManager.getConnection(url, user, password); 
             
 
-            String sql = "insert into nrc_usuarios values(?,?,?,?,?)";
+            String sql = "insert into nrc_venda_produto values(?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);    
             pst.setInt(1, nrcVenda_produto.getNrcIdVendaProduto());
             pst.setInt(2, nrcVenda_produto.getNrcIdProduto());
             pst.setInt(3, nrcVenda_produto.getNrcIdVenda());
             pst.setInt(4, nrcVenda_produto.getNrcQuantidade());
-            pst.setString(5, nrcVenda_produto.getNrcPreco());
+            pst.setDouble(5, nrcVenda_produto.getNrcPreco());
             pst.executeUpdate();
             
                                         
@@ -80,12 +79,12 @@ public class DaoNrcVenda_produto extends DaoAbstract{
             cnt = DriverManager.getConnection(url, user, password); 
             
 
-            String sql = "select * from nrc_usuarios ";
+            String sql = "select * from nrc_venda_produto ";
             PreparedStatement pst = cnt.prepareStatement(sql);    
             ResultSet rs = pst.executeQuery();
             while (rs.next()== true){
-                System.out.println("id:" + rs.getInt("nrc_idusuarios"));
-                System.out.println("nome:" + rs.getString("nrc_nome"));
+            System.out.println("id:" + rs.getInt("nrc_id_vendaproduto"));
+          
                 
             }
             
