@@ -41,7 +41,7 @@ public class DaoNrcUsuarios extends DaoAbstract{
             pst.setString(2, nrcUsuarios.getNrcNome());
             pst.setString(3, nrcUsuarios.getNrcApelido());
             pst.setString(4, nrcUsuarios.getNrcCpf());
-            pst.setDate(5, null);// nrcUsuarios.getMpvDataNascimento());
+            pst.setDate(5, null);// nrcUsuarios.getNrcDataNascimento());
             pst.setInt(6, nrcUsuarios.getNrcNivel());
             pst.setString(7, nrcUsuarios.getNrcSenha());
             pst.setString(8, nrcUsuarios.getNrcAtivo());

@@ -30,10 +30,10 @@ public class JFrmNrcLogin extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTxtUsuario = new javax.swing.JTextField();
+        jTxtNrcUsuario = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jPwfSenha = new javax.swing.JPasswordField();
-        jBtnConfirmar = new javax.swing.JButton();
+        jPwfNrcSenha = new javax.swing.JPasswordField();
+        jBtnNrcConfirmar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -41,19 +41,19 @@ public class JFrmNrcLogin extends javax.swing.JFrame {
 
         jLabel2.setText("Usuário");
 
-        jTxtUsuario.addActionListener(new java.awt.event.ActionListener() {
+        jTxtNrcUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtUsuarioActionPerformed(evt);
+                jTxtNrcUsuarioActionPerformed(evt);
             }
         });
 
         jLabel3.setText("Senha");
 
-        jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gravar.png"))); // NOI18N
-        jBtnConfirmar.setText("Confirmar");
-        jBtnConfirmar.addActionListener(new java.awt.event.ActionListener() {
+        jBtnNrcConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gravar.png"))); // NOI18N
+        jBtnNrcConfirmar.setText("Confirmar");
+        jBtnNrcConfirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnConfirmarActionPerformed(evt);
+                jBtnNrcConfirmarActionPerformed(evt);
             }
         });
 
@@ -66,12 +66,12 @@ public class JFrmNrcLogin extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTxtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTxtNrcUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jPwfSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 166, Short.MAX_VALUE)
+                                .addComponent(jPwfNrcSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 166, Short.MAX_VALUE)
                                 .addGap(17, 17, 17))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -83,7 +83,7 @@ public class JFrmNrcLogin extends javax.swing.JFrame {
                                 .addComponent(jLabel1)
                                 .addGap(154, 154, 154))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jBtnConfirmar)
+                                .addComponent(jBtnNrcConfirmar)
                                 .addGap(137, 137, 137))))))
         );
         layout.setVerticalGroup(
@@ -97,32 +97,32 @@ public class JFrmNrcLogin extends javax.swing.JFrame {
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPwfSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtNrcUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPwfNrcSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jBtnConfirmar)
+                .addComponent(jBtnNrcConfirmar)
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTxtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtUsuarioActionPerformed
+    private void jTxtNrcUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtNrcUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtUsuarioActionPerformed
+    }//GEN-LAST:event_jTxtNrcUsuarioActionPerformed
 
-    private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
+    private void jBtnNrcConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnNrcConfirmarActionPerformed
         // TODO add your handling code here:
-        String usuario = jTxtUsuario.getText();
-        String senha = new String(jPwfSenha.getPassword());
+        String usuario = jTxtNrcUsuario.getText();
+        String senha = new String(jPwfNrcSenha.getPassword());
         
-        if(usuario.equals("centurion") && senha.equals("Marcolaaa")){
+        if(usuario.equals("centurion") && senha.equals("senhamuitoboa")){
             JFrmNrcPrincipal jFrmNrcPrincipal = new JFrmNrcPrincipal();
             jFrmNrcPrincipal.setVisible(true);
         
         };
         
-    }//GEN-LAST:event_jBtnConfirmarActionPerformed
+    }//GEN-LAST:event_jBtnNrcConfirmarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -160,11 +160,11 @@ public class JFrmNrcLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBtnConfirmar;
+    private javax.swing.JButton jBtnNrcConfirmar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPasswordField jPwfSenha;
-    private javax.swing.JTextField jTxtUsuario;
+    private javax.swing.JPasswordField jPwfNrcSenha;
+    private javax.swing.JTextField jTxtNrcUsuario;
     // End of variables declaration//GEN-END:variables
 }

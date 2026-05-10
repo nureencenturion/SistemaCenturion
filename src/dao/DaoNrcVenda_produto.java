@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import testes.JdbcNrcCrud;
-import bean.NrcUsuarios;
+import bean.NrcVenda_produto;
 import java.sql.Date;
 
 /**
@@ -23,7 +23,7 @@ public class DaoNrcVenda_produto extends DaoAbstract{
 
     @Override
     public void insert(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object;
+       NrcVenda_produto nrcVenda_produto = (NrcVenda_produto) object;
        try {
             Class.forName("com.mysql.jdbc.Driver");
             String url, user, password;
@@ -35,16 +35,13 @@ public class DaoNrcVenda_produto extends DaoAbstract{
             cnt = DriverManager.getConnection(url, user, password); 
             
 
-            String sql = "insert into nrc_usuarios values(?,?,?,?,?,?,?,?)";
+            String sql = "insert into nrc_usuarios values(?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);    
-            pst.setInt(1, nrcUsuarios.getNrcIdUsuarios());
-            pst.setString(2, nrcUsuarios.getNrcNome());
-            pst.setString(3, nrcUsuarios.getNrcApelido());
-            pst.setString(4, nrcUsuarios.getNrcCpf());
-            pst.setDate(5, null);// nrcUsuarios.getMpvDataNascimento());
-            pst.setInt(6, nrcUsuarios.getNrcNivel());
-            pst.setString(7, nrcUsuarios.getNrcSenha());
-            pst.setString(8, nrcUsuarios.getNrcAtivo());
+            pst.setInt(1, nrcVenda_produto.getNrcIdVendaProduto());
+            pst.setInt(2, nrcVenda_produto.getNrcIdProduto());
+            pst.setInt(3, nrcVenda_produto.getNrcIdVenda());
+            pst.setInt(4, nrcVenda_produto.getNrcQuantidade());
+            pst.setString(5, nrcVenda_produto.getNrcPreco());
             pst.executeUpdate();
             
                                         
@@ -57,12 +54,12 @@ public class DaoNrcVenda_produto extends DaoAbstract{
 
     @Override
     public void update(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object; 
+       NrcVenda_produto nrcVenda_produto = (NrcVenda_produto) object; 
     }
 
     @Override
     public void delete(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object; 
+       NrcVenda_produto nrcVenda_produto = (NrcVenda_produto) object; 
     }
 
     @Override

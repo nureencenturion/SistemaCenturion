@@ -24,39 +24,39 @@ public class JDlgNrcUsuarios extends javax.swing.JDialog {
     }
     
     public void desabilitar(){
-        jTxtCodigo.setEnabled(false);
-        jTxtNome.setEnabled(false);
-        jTxtApelido.setEnabled(false);
-        jFmtData.setEnabled(false);
-        jFmtCpf.setEnabled(false);
-        jFmtData.setEnabled(false);
-        jCboNivel.setEnabled(false);
-        jPwfSenha.setEnabled(false);
-        jChbAtivo.setEnabled(false);
-        jBtnConfirmar.setEnabled(false);
-        jBtnCancelar.setEnabled(false);
-        jBtnIncluir.setEnabled(true);
-        jBtnAlterar.setEnabled(true);
-        jBtnExcluir.setEnabled(true);
-        jBtnPesquisar.setEnabled(true);
+        jTxtNrcCodigo.setEnabled(false);
+        jTxtNrcNome.setEnabled(false);
+        jTxtNrcApelido.setEnabled(false);
+        jFmtNrcData.setEnabled(false);
+        jFmtNrcCpf.setEnabled(false);
+        jFmtNrcData.setEnabled(false);
+        jCboNrcNivel.setEnabled(false);
+        jPwfNrcSenha.setEnabled(false);
+        jChbNrcAtivo.setEnabled(false);
+        jBtnNrcConfirmar.setEnabled(false);
+        jBtnNrcCancelar.setEnabled(false);
+        jBtnNrcIncluir.setEnabled(true);
+        jBtnNrcAlterar.setEnabled(true);
+        jBtnNrcExcluir.setEnabled(true);
+        jBtnNrcPesquisar.setEnabled(true);
     }
     
     public void habilitar(){
-        jTxtCodigo.setEnabled(true);
-        jTxtNome.setEnabled(true);
-        jTxtApelido.setEnabled(true);
-        jFmtData.setEnabled(true);
-        jFmtCpf.setEnabled(true);
-        jFmtData.setEnabled(true);
-        jCboNivel.setEnabled(true);
-        jPwfSenha.setEnabled(true);
-        jChbAtivo.setEnabled(true);
-        jBtnConfirmar.setEnabled(true);
-        jBtnCancelar.setEnabled(true);
-        jBtnIncluir.setEnabled(false);
-        jBtnAlterar.setEnabled(false);
-        jBtnExcluir.setEnabled(false);
-        jBtnPesquisar.setEnabled(false);
+        jTxtNrcCodigo.setEnabled(true);
+        jTxtNrcNome.setEnabled(true);
+        jTxtNrcApelido.setEnabled(true);
+        jFmtNrcData.setEnabled(true);
+        jFmtNrcCpf.setEnabled(true);
+        jFmtNrcData.setEnabled(true);
+        jCboNrcNivel.setEnabled(true);
+        jPwfNrcSenha.setEnabled(true);
+        jChbNrcAtivo.setEnabled(true);
+        jBtnNrcConfirmar.setEnabled(true);
+        jBtnNrcCancelar.setEnabled(true);
+        jBtnNrcIncluir.setEnabled(false);
+        jBtnNrcAlterar.setEnabled(false);
+        jBtnNrcExcluir.setEnabled(false);
+        jBtnNrcPesquisar.setEnabled(false);
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -68,26 +68,26 @@ public class JDlgNrcUsuarios extends javax.swing.JDialog {
     private void initComponents() {
 
         jLblCodigo = new javax.swing.JLabel();
-        jTxtCodigo = new javax.swing.JTextField();
+        jTxtNrcCodigo = new javax.swing.JTextField();
         jLblNome = new javax.swing.JLabel();
-        jTxtNome = new javax.swing.JTextField();
+        jTxtNrcNome = new javax.swing.JTextField();
         jLblApelido = new javax.swing.JLabel();
-        jTxtApelido = new javax.swing.JTextField();
+        jTxtNrcApelido = new javax.swing.JTextField();
         jLblCpf = new javax.swing.JLabel();
-        jFmtCpf = new javax.swing.JFormattedTextField();
+        jFmtNrcCpf = new javax.swing.JFormattedTextField();
         jLblData = new javax.swing.JLabel();
-        jFmtData = new javax.swing.JFormattedTextField();
+        jFmtNrcData = new javax.swing.JFormattedTextField();
         jLblNivel = new javax.swing.JLabel();
-        jCboNivel = new javax.swing.JComboBox<>();
+        jCboNrcNivel = new javax.swing.JComboBox<>();
         jLblSenha = new javax.swing.JLabel();
-        jPwfSenha = new javax.swing.JPasswordField();
-        jChbAtivo = new javax.swing.JCheckBox();
-        jBtnIncluir = new javax.swing.JButton();
-        jBtnAlterar = new javax.swing.JButton();
-        jBtnExcluir = new javax.swing.JButton();
-        jBtnConfirmar = new javax.swing.JButton();
-        jBtnPesquisar = new javax.swing.JButton();
-        jBtnCancelar = new javax.swing.JButton();
+        jPwfNrcSenha = new javax.swing.JPasswordField();
+        jChbNrcAtivo = new javax.swing.JCheckBox();
+        jBtnNrcIncluir = new javax.swing.JButton();
+        jBtnNrcAlterar = new javax.swing.JButton();
+        jBtnNrcExcluir = new javax.swing.JButton();
+        jBtnNrcConfirmar = new javax.swing.JButton();
+        jBtnNrcPesquisar = new javax.swing.JButton();
+        jBtnNrcCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -103,64 +103,64 @@ public class JDlgNrcUsuarios extends javax.swing.JDialog {
 
         jLblNivel.setText("Nível");
 
-        jCboNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jCboNrcNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLblSenha.setText("Senha");
 
-        jPwfSenha.setText("jPasswordField1");
-        jPwfSenha.addActionListener(new java.awt.event.ActionListener() {
+        jPwfNrcSenha.setText("jPasswordField1");
+        jPwfNrcSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPwfSenhaActionPerformed(evt);
+                jPwfNrcSenhaActionPerformed(evt);
             }
         });
 
-        jChbAtivo.setText("Ativo");
+        jChbNrcAtivo.setText("Ativo");
 
-        jBtnIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
-        jBtnIncluir.setText("Incluir");
-        jBtnIncluir.addActionListener(new java.awt.event.ActionListener() {
+        jBtnNrcIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
+        jBtnNrcIncluir.setText("Incluir");
+        jBtnNrcIncluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnIncluirActionPerformed(evt);
+                jBtnNrcIncluirActionPerformed(evt);
             }
         });
 
-        jBtnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
-        jBtnAlterar.setText("Alterar");
-        jBtnAlterar.addActionListener(new java.awt.event.ActionListener() {
+        jBtnNrcAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
+        jBtnNrcAlterar.setText("Alterar");
+        jBtnNrcAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnAlterarActionPerformed(evt);
+                jBtnNrcAlterarActionPerformed(evt);
             }
         });
 
-        jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
-        jBtnExcluir.setText("Excluir");
-        jBtnExcluir.addActionListener(new java.awt.event.ActionListener() {
+        jBtnNrcExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
+        jBtnNrcExcluir.setText("Excluir");
+        jBtnNrcExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnExcluirActionPerformed(evt);
+                jBtnNrcExcluirActionPerformed(evt);
             }
         });
 
-        jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gravar.png"))); // NOI18N
-        jBtnConfirmar.setText("Confirmar");
-        jBtnConfirmar.addActionListener(new java.awt.event.ActionListener() {
+        jBtnNrcConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gravar.png"))); // NOI18N
+        jBtnNrcConfirmar.setText("Confirmar");
+        jBtnNrcConfirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnConfirmarActionPerformed(evt);
+                jBtnNrcConfirmarActionPerformed(evt);
             }
         });
 
-        jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
-        jBtnPesquisar.setText("Pesquisar");
-        jBtnPesquisar.addActionListener(new java.awt.event.ActionListener() {
+        jBtnNrcPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
+        jBtnNrcPesquisar.setText("Pesquisar");
+        jBtnNrcPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnPesquisarActionPerformed(evt);
+                jBtnNrcPesquisarActionPerformed(evt);
             }
         });
 
-        jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
-        jBtnCancelar.setText("Cancelar");
-        jBtnCancelar.addActionListener(new java.awt.event.ActionListener() {
+        jBtnNrcCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
+        jBtnNrcCancelar.setText("Cancelar");
+        jBtnNrcCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnCancelarActionPerformed(evt);
+                jBtnNrcCancelarActionPerformed(evt);
             }
         });
 
@@ -175,53 +175,53 @@ public class JDlgNrcUsuarios extends javax.swing.JDialog {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTxtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTxtNrcCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLblCodigo))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLblNome, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(jTxtNome)))
+                                    .addComponent(jTxtNrcNome)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTxtApelido, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTxtNrcApelido, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLblApelido))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLblCpf)
                                         .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(jFmtCpf)))
+                                    .addComponent(jFmtNrcCpf)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jLblData, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jFmtData))
+                                    .addComponent(jFmtNrcData))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLblNivel)
                                         .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(jCboNivel, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                    .addComponent(jCboNrcNivel, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLblSenha)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jPwfSenha)
+                                .addComponent(jPwfNrcSenha)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jChbAtivo))))
+                                .addComponent(jChbNrcAtivo))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jBtnIncluir)
+                        .addComponent(jBtnNrcIncluir)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBtnAlterar)
+                        .addComponent(jBtnNrcAlterar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBtnExcluir)
+                        .addComponent(jBtnNrcExcluir)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBtnConfirmar)
+                        .addComponent(jBtnNrcConfirmar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBtnCancelar)
+                        .addComponent(jBtnNrcCancelar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
-                        .addComponent(jBtnPesquisar)))
+                        .addComponent(jBtnNrcPesquisar)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -233,76 +233,76 @@ public class JDlgNrcUsuarios extends javax.swing.JDialog {
                     .addComponent(jLblNome))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtNrcCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtNrcNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLblApelido)
                     .addComponent(jLblCpf))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtApelido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFmtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtNrcApelido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFmtNrcCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLblData)
                     .addComponent(jLblNivel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFmtData, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCboNivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jFmtNrcData, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCboNrcNivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLblSenha)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jPwfSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jChbAtivo))
+                    .addComponent(jPwfNrcSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jChbNrcAtivo))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnIncluir)
-                    .addComponent(jBtnAlterar)
-                    .addComponent(jBtnExcluir)
-                    .addComponent(jBtnConfirmar)
-                    .addComponent(jBtnPesquisar)
-                    .addComponent(jBtnCancelar))
+                    .addComponent(jBtnNrcIncluir)
+                    .addComponent(jBtnNrcAlterar)
+                    .addComponent(jBtnNrcExcluir)
+                    .addComponent(jBtnNrcConfirmar)
+                    .addComponent(jBtnNrcPesquisar)
+                    .addComponent(jBtnNrcCancelar))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
+    private void jBtnNrcIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnNrcIncluirActionPerformed
         // TODO add your handling code here:
         habilitar();
-    }//GEN-LAST:event_jBtnIncluirActionPerformed
+    }//GEN-LAST:event_jBtnNrcIncluirActionPerformed
 
-    private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
+    private void jBtnNrcCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnNrcCancelarActionPerformed
         // TODO add your handling code here:
         desabilitar();
-    }//GEN-LAST:event_jBtnCancelarActionPerformed
+    }//GEN-LAST:event_jBtnNrcCancelarActionPerformed
 
-    private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
+    private void jBtnNrcAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnNrcAlterarActionPerformed
     habilitar();        // TODO add your handling code here:
-    }//GEN-LAST:event_jBtnAlterarActionPerformed
+    }//GEN-LAST:event_jBtnNrcAlterarActionPerformed
 
-    private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
+    private void jBtnNrcConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnNrcConfirmarActionPerformed
     desabilitar();        // TODO add your handling code here:
-    }//GEN-LAST:event_jBtnConfirmarActionPerformed
+    }//GEN-LAST:event_jBtnNrcConfirmarActionPerformed
 
-    private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
+    private void jBtnNrcExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnNrcExcluirActionPerformed
         // TODO add your handling code here:
         JOptionPane.showConfirmDialog(null, "Confirma exclusão do usuário ?",
                 "Seleciona a opção", JOptionPane.YES_NO_OPTION );
-    }//GEN-LAST:event_jBtnExcluirActionPerformed
+    }//GEN-LAST:event_jBtnNrcExcluirActionPerformed
 
-    private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
+    private void jBtnNrcPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnNrcPesquisarActionPerformed
         // TODO add your handling code here:
         JOptionPane.showInputDialog(null, "Entre com o código do usuário");
-    }//GEN-LAST:event_jBtnPesquisarActionPerformed
+    }//GEN-LAST:event_jBtnNrcPesquisarActionPerformed
 
-    private void jPwfSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPwfSenhaActionPerformed
+    private void jPwfNrcSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPwfNrcSenhaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPwfSenhaActionPerformed
+    }//GEN-LAST:event_jPwfNrcSenhaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -348,16 +348,16 @@ public class JDlgNrcUsuarios extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBtnAlterar;
-    private javax.swing.JButton jBtnCancelar;
-    private javax.swing.JButton jBtnConfirmar;
-    private javax.swing.JButton jBtnExcluir;
-    private javax.swing.JButton jBtnIncluir;
-    private javax.swing.JButton jBtnPesquisar;
-    private javax.swing.JComboBox<String> jCboNivel;
-    private javax.swing.JCheckBox jChbAtivo;
-    private javax.swing.JFormattedTextField jFmtCpf;
-    private javax.swing.JFormattedTextField jFmtData;
+    private javax.swing.JButton jBtnNrcAlterar;
+    private javax.swing.JButton jBtnNrcCancelar;
+    private javax.swing.JButton jBtnNrcConfirmar;
+    private javax.swing.JButton jBtnNrcExcluir;
+    private javax.swing.JButton jBtnNrcIncluir;
+    private javax.swing.JButton jBtnNrcPesquisar;
+    private javax.swing.JComboBox<String> jCboNrcNivel;
+    private javax.swing.JCheckBox jChbNrcAtivo;
+    private javax.swing.JFormattedTextField jFmtNrcCpf;
+    private javax.swing.JFormattedTextField jFmtNrcData;
     private javax.swing.JLabel jLblApelido;
     private javax.swing.JLabel jLblCodigo;
     private javax.swing.JLabel jLblCpf;
@@ -365,9 +365,9 @@ public class JDlgNrcUsuarios extends javax.swing.JDialog {
     private javax.swing.JLabel jLblNivel;
     private javax.swing.JLabel jLblNome;
     private javax.swing.JLabel jLblSenha;
-    private javax.swing.JPasswordField jPwfSenha;
-    private javax.swing.JTextField jTxtApelido;
-    private javax.swing.JTextField jTxtCodigo;
-    private javax.swing.JTextField jTxtNome;
+    private javax.swing.JPasswordField jPwfNrcSenha;
+    private javax.swing.JTextField jTxtNrcApelido;
+    private javax.swing.JTextField jTxtNrcCodigo;
+    private javax.swing.JTextField jTxtNrcNome;
     // End of variables declaration//GEN-END:variables
 }

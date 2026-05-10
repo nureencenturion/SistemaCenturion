@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import testes.JdbcNrcCrud;
-import bean.NrcUsuarios;
+import bean.NrcCompra;
 import java.sql.Date;
 
 /**
@@ -23,7 +23,7 @@ public class DaoNrcCompra extends DaoAbstract{
 
     @Override
     public void insert(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object;
+       NrcCompra nrcCompra = (NrcCompra) object;
        try {
             Class.forName("com.mysql.jdbc.Driver");
             String url, user, password;
@@ -35,16 +35,13 @@ public class DaoNrcCompra extends DaoAbstract{
             cnt = DriverManager.getConnection(url, user, password); 
             
 
-            String sql = "insert into nrc_usuarios values(?,?,?,?,?,?,?,?)";
+            String sql = "insert into nrc_usuarios values(?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);    
-            pst.setInt(1, nrcUsuarios.getNrcIdUsuarios());
-            pst.setString(2, nrcUsuarios.getNrcNome());
-            pst.setString(3, nrcUsuarios.getNrcApelido());
-            pst.setString(4, nrcUsuarios.getNrcCpf());
-            pst.setDate(5, null);// nrcUsuarios.getMpvDataNascimento());
-            pst.setInt(6, nrcUsuarios.getNrcNivel());
-            pst.setString(7, nrcUsuarios.getNrcSenha());
-            pst.setString(8, nrcUsuarios.getNrcAtivo());
+            pst.setInt(1, nrcCompra.getNrcIdCompra());
+            pst.setDate(2, null);// nrcCompra.getNrcDataCompra());
+            pst.setInt(3, nrcCompra.getNrcCliente());
+            pst.setString(4, nrcCompra.getNrcTotal());
+            pst.setInt(5, nrcCompra.getNrcUsuario());
             pst.executeUpdate();
             
                                         
@@ -57,12 +54,12 @@ public class DaoNrcCompra extends DaoAbstract{
 
     @Override
     public void update(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object; 
+       NrcCompra nrcCompra = (NrcCompra) object; 
     }
 
     @Override
     public void delete(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object; 
+       NrcCompra nrcCompra = (NrcCompra) object; 
     }
 
     @Override

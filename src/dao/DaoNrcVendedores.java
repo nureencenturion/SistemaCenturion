@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import testes.JdbcNrcCrud;
-import bean.NrcUsuarios;
+import bean.NrcVendedores;
 import java.sql.Date;
 
 /**
@@ -23,7 +23,7 @@ public class DaoNrcVendedores extends DaoAbstract{
 
     @Override
     public void insert(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object;
+       NrcVendedores nrcVendedores = (NrcVendedores) object;
        try {
             Class.forName("com.mysql.jdbc.Driver");
             String url, user, password;
@@ -35,16 +35,15 @@ public class DaoNrcVendedores extends DaoAbstract{
             cnt = DriverManager.getConnection(url, user, password); 
             
 
-            String sql = "insert into nrc_usuarios values(?,?,?,?,?,?,?,?)";
+            String sql = "insert into nrc_usuarios values(?,?,?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);    
-            pst.setInt(1, nrcUsuarios.getNrcIdUsuarios());
-            pst.setString(2, nrcUsuarios.getNrcNome());
-            pst.setString(3, nrcUsuarios.getNrcApelido());
-            pst.setString(4, nrcUsuarios.getNrcCpf());
-            pst.setDate(5, null);// nrcUsuarios.getMpvDataNascimento());
-            pst.setInt(6, nrcUsuarios.getNrcNivel());
-            pst.setString(7, nrcUsuarios.getNrcSenha());
-            pst.setString(8, nrcUsuarios.getNrcAtivo());
+            pst.setInt(1, nrcVendedores.getNrcIdVendedores());
+            pst.setString(2, nrcVendedores.getNrcNome());
+            pst.setInt(3, nrcVendedores.getNrcIdade());
+            pst.setString(4, nrcVendedores.getNrcTelefone());
+            pst.setString(5, nrcVendedores.getNrcCpf());
+            pst.setString(6, nrcVendedores.getNrcRg());
+            pst.setString(7, nrcVendedores.getNrcEmail());
             pst.executeUpdate();
             
                                         
@@ -57,12 +56,12 @@ public class DaoNrcVendedores extends DaoAbstract{
 
     @Override
     public void update(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object; 
+       NrcVendedores nrcVendedores = (NrcVendedores) object; 
     }
 
     @Override
     public void delete(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object; 
+       NrcVendedores nrcVendedores = (NrcVendedores) object; 
     }
 
     @Override
@@ -87,7 +86,9 @@ public class DaoNrcVendedores extends DaoAbstract{
             PreparedStatement pst = cnt.prepareStatement(sql);    
             ResultSet rs = pst.executeQuery();
             while (rs.next()== true){
-                System.out.println("id:" + rs.getInt("nrc_idusuarios"));
+                System.out.println("id:" + rs.getInt("nrc_idVendedores"));
+                System.out.println("nome:" + rs.getString("nrc_nome"));
+                System.out.println("idade:" + rs.getString("nrc_idade"));
                 System.out.println("nome:" + rs.getString("nrc_nome"));
                 
             }

@@ -3,35 +3,31 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/dao/DaoNrcUsuarios.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/sistemacenturion/SistemaCenturion.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/bean/NrcVenda_produto.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/dao/DaoNrcCompra.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/dao/DaoNrcFornecedores.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/view/JFrmNrcLogin.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/bean/NrcVenda.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/testes/JdbcNrcCrud.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/view/JDlgNrcFornecedores.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/bean/NrcProdutos.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/bean/NrcClientes.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/view/JDlgNrcProdutos.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/view/JDlgNrcClientes.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/testes/JbdcNrcSelect.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/dao/DaoNrcVenda_produto.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/view/JDlgNrcUsuarios.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/dao/DaoNrcCompra_produto.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/bean/NrcVendedores.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/bean/NrcUsuarios.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/dao/DaoNrcClientes.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/dao/DaoAbstract.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/dao/DaoNrcProdutos.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/bean/NrcCompra.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/dao/DaoNrcVendedores.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/bean/NrcFornecedores.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/bean/NrcCompra_produto.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/view/JFrmNrcPrincipal.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/dao/DaoNrcVenda.java</file>
-            <file>file:/C:/Users/u71744222177/Documents/SistemaCenturion/src/view/JDlgNrcVendedores.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JDlgNrcClientes.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JDlgNrcProdutos.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JFrmNrcPrincipal.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JDlgNrcVendedores.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JDlgNrcFornecedores.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JDlgNrcUsuarios.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/dao/DaoNrcClientes.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/view/JFrmNrcLogin.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/bean/NrcClientes.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/bean/NrcCompra.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/dao/DaoNrcCompra.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/bean/NrcCompra_produto.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/bean/NrcProdutos.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/bean/NrcUsuarios.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/dao/DaoNrcUsuarios.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/dao/DaoNrcCompra_produto.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/dao/DaoNrcFornecedores.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/bean/NrcFornecedores.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/dao/DaoNrcProdutos.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/dao/DaoNrcVenda.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/bean/NrcVenda.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/dao/DaoNrcVenda_produto.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/bean/NrcVenda_produto.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/dao/DaoNrcVendedores.java</file>
+            <file>file:/C:/Users/Nureen/Documents/NetBeansProjects/SistemaCenturion/src/bean/NrcVendedores.java</file>
         </group>
     </open-files>
 </project-private>

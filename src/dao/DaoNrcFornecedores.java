@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import testes.JdbcNrcCrud;
-import bean.NrcUsuarios;
+import bean.NrcFornecedores;
 import java.sql.Date;
 
 /**
@@ -23,7 +23,7 @@ public class DaoNrcFornecedores extends DaoAbstract{
 
     @Override
     public void insert(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object;
+       NrcFornecedores nrcFornecedores = (NrcFornecedores) object;
        try {
             Class.forName("com.mysql.jdbc.Driver");
             String url, user, password;
@@ -35,16 +35,24 @@ public class DaoNrcFornecedores extends DaoAbstract{
             cnt = DriverManager.getConnection(url, user, password); 
             
 
-            String sql = "insert into nrc_usuarios values(?,?,?,?,?,?,?,?)";
+            String sql = "insert into nrc_usuarios values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);    
-            pst.setInt(1, nrcUsuarios.getNrcIdUsuarios());
-            pst.setString(2, nrcUsuarios.getNrcNome());
-            pst.setString(3, nrcUsuarios.getNrcApelido());
-            pst.setString(4, nrcUsuarios.getNrcCpf());
-            pst.setDate(5, null);// nrcUsuarios.getMpvDataNascimento());
-            pst.setInt(6, nrcUsuarios.getNrcNivel());
-            pst.setString(7, nrcUsuarios.getNrcSenha());
-            pst.setString(8, nrcUsuarios.getNrcAtivo());
+            pst.setInt(1, nrcFornecedores.getNrcIdFornecedores());
+            pst.setString(2, nrcFornecedores.getNrcNome());
+            pst.setString(3, nrcFornecedores.getNrcCnpj());
+            pst.setInt(4, nrcFornecedores.getNrcCategoria());
+            pst.setString(5, nrcFornecedores.getNrcTelefone());
+            pst.setString(6, nrcFornecedores.getNrcEmail());
+            pst.setString(7, nrcFornecedores.getNrcBairro());
+            pst.setString(8, nrcFornecedores.getNrcLogradouro());
+            pst.setString(9, nrcFornecedores.getNrcNumero());
+            pst.setString(10, nrcFornecedores.getNrcCidade());
+            pst.setString(11, nrcFornecedores.getNrcEstado());
+            pst.setString(12, nrcFornecedores.getNrcCep());
+            pst.setString(13, nrcFornecedores.getNrcHorarioAtendimento());
+            pst.setString(14, nrcFornecedores.getNrcSite());
+            pst.setInt(15, nrcFornecedores.getNrcStatus());
+            pst.setString(16, nrcFornecedores.getNrcDiasEntrega());
             pst.executeUpdate();
             
                                         
@@ -57,12 +65,12 @@ public class DaoNrcFornecedores extends DaoAbstract{
 
     @Override
     public void update(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object; 
+       NrcFornecedores nrcFornecedores = (NrcFornecedores) object; 
     }
 
     @Override
     public void delete(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object; 
+       NrcFornecedores nrcFornecedores = (NrcFornecedores) object; 
     }
 
     @Override

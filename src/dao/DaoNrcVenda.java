@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import testes.JdbcNrcCrud;
-import bean.NrcUsuarios;
+import bean.NrcVenda;
 import java.sql.Date;
 
 /**
@@ -23,7 +23,7 @@ public class DaoNrcVenda extends DaoAbstract{
 
     @Override
     public void insert(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object;
+       NrcVenda nrcVenda = (NrcVenda) object;
        try {
             Class.forName("com.mysql.jdbc.Driver");
             String url, user, password;
@@ -35,16 +35,14 @@ public class DaoNrcVenda extends DaoAbstract{
             cnt = DriverManager.getConnection(url, user, password); 
             
 
-            String sql = "insert into nrc_usuarios values(?,?,?,?,?,?,?,?)";
+            String sql = "insert into nrc_usuarios values(?,?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);    
-            pst.setInt(1, nrcUsuarios.getNrcIdUsuarios());
-            pst.setString(2, nrcUsuarios.getNrcNome());
-            pst.setString(3, nrcUsuarios.getNrcApelido());
-            pst.setString(4, nrcUsuarios.getNrcCpf());
-            pst.setDate(5, null);// nrcUsuarios.getMpvDataNascimento());
-            pst.setInt(6, nrcUsuarios.getNrcNivel());
-            pst.setString(7, nrcUsuarios.getNrcSenha());
-            pst.setString(8, nrcUsuarios.getNrcAtivo());
+            pst.setInt(1, nrcVenda.getNrcIdVenda());
+            pst.setInt(2, nrcVenda.getNrcIdUsuarios());
+            pst.setInt(3, nrcVenda.getNrcIdClientes());
+            pst.setString(4, nrcVenda.getNrcProduto());
+            pst.setDate(5, null);// nrcVenda.getNrcDataVenda());
+            pst.setString(6, nrcVenda.getNrcValorTotal());
             pst.executeUpdate();
             
                                         
@@ -57,12 +55,12 @@ public class DaoNrcVenda extends DaoAbstract{
 
     @Override
     public void update(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object; 
+       NrcVenda nrcVenda = (NrcVenda) object; 
     }
 
     @Override
     public void delete(Object object) {
-       NrcUsuarios nrcUsuarios = (NrcUsuarios) object; 
+       NrcVenda nrcVenda = (NrcVenda) object; 
     }
 
     @Override
@@ -78,7 +76,7 @@ public class DaoNrcVenda extends DaoAbstract{
             url="jdbc:mysql://10.7.0.51:33062/db_nureen_centurion";
             user="nureen_centurion";
             password="nureen_centurion";
-            
+           
             Connection cnt;
             cnt = DriverManager.getConnection(url, user, password); 
             

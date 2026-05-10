@@ -12,8 +12,8 @@ import java.util.Date;
  */
 public class NrcVenda_produto {
     private int NrcIdVendaProduto;
-    private int nrcProduto;
-    private int nrcVenda;
+    private int nrcIdProduto;
+    private int nrcIdVenda;
     private int nrcQuantidade;
     private String nrcPreco;
 
@@ -25,20 +25,20 @@ public class NrcVenda_produto {
         this.NrcIdVendaProduto = NrcIdVendaProduto;
     }
 
-    public int getNrcProduto() {
-        return nrcProduto;
+    public int getNrcIdProduto() {
+        return nrcIdProduto;
     }
 
-    public void setNrcProduto(int nrcProduto) {
-        this.nrcProduto = nrcProduto;
+    public void setNrcIdProduto(int nrcIdProduto) {
+        this.nrcIdProduto = nrcIdProduto;
     }
 
-    public int getNrcVenda() {
-        return nrcVenda;
+    public int getNrcIdVenda() {
+        return nrcIdVenda;
     }
 
-    public void setNrcVenda(int nrcVenda) {
-        this.nrcVenda = nrcVenda;
+    public void setNrcIdVenda(int nrcIdVenda) {
+        this.nrcIdVenda = nrcIdVenda;
     }
 
     public int getNrcQuantidade() {
